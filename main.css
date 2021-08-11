@@ -1,0 +1,330 @@
+/* ---------------------------------
+Fonts  
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+/* ----------------------------------
+ Common Css Section 
+ ------------------------------------*/
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3f1FF;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    padding: 30px;
+}
+
+/* ----------------------------------
+ Header Part Start
+ ------------------------------------*/
+.head-section{
+    background-color: #2D25A0;
+}
+.head-element-section{
+    padding-top: 60px;
+    padding-bottom: 88px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.head-title-text{
+    width: 445px;
+    font-size: 54px;
+    color: #FFFFFF;
+    line-height: 80px;
+    font-weight: 700px;
+}
+.head-title-text:hover{
+    color: yellow;
+    transition: color 2s;
+    
+}
+.header-button{
+    width: 120px;
+    background-color: #E02C6D;
+    padding: 10px 24px 10px 24px;
+    margin-top: -27px;
+}
+.header-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400px;
+}
+.header-button a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+}
+.head-image img{
+    width: 556px;
+    height: 438px;
+}
+
+/* Image Animation Effect */
+.head-image img:hover{
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 2s;
+}
+/* ----------------------------------
+ Header Part Finish
+ ------------------------------------*/
+
+
+
+/* ----------------------------------
+ Players Part Start
+ ------------------------------------*/
+.palyers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    grid-row-gap:27px;
+}
+.player{
+   background-color: white;
+   width: 300px;
+   height: 474px;
+   box-shadow: 0px 1px 20px 0px rgb(153, 151, 148);
+   padding: 15px;
+}
+.player-banner{
+    overflow: hidden;
+}
+.player-banner img{
+    
+    Width:100%;
+    Height: 256px;
+
+}
+.player-banner img:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+.player-name{
+    
+    font-weight: 700px;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-biography{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+/* ----------------------------------
+ Players Part Finish
+ ------------------------------------*/
+
+ /* ----------------------------------
+ Video Section Start
+ ------------------------------------*/
+ .latest-video-text{
+    text-align: center;
+ }
+
+ .latest-videos{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .video-section{
+     margin-right: 20px;
+     padding:15px;
+     width: 500px;
+     box-shadow: 0px 1px 20px 0px rgb(153, 151, 148);
+ }
+ .video iframe{
+     width: 100%;
+     height: 300px;
+ }
+ .video-title h3{
+    text-align: center;
+ }
+
+ /* ----------------------------------
+  Video Section Finish
+ ------------------------------------*/
+
+ /* ----------------------------------
+  Blog Section Start
+ ------------------------------------*/
+ .blog-text{
+     text-align: center;
+ }
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+ }
+.blog{
+    padding:10px;
+    width: 300px;
+    background-color: white;
+}
+ .thumbnail img{
+    height: 200px;
+    width: 300px;
+ }
+ .blog-info h3{
+    font-weight: 400px;
+    font-size: 18px;
+ }
+ 
+ .blog-authore a{
+     font-weight: 400px;
+     text-decoration: none;
+     color: tomato;
+ }
+ 
+ /* ----------------------------------
+   Blog Section Finish
+ ------------------------------------*/
+
+/* ----------------------------------
+ Footer Part Start
+ ------------------------------------*/
+ .footer-section{
+    text-align: center;
+    margin-top: 140px;
+ }
+ .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .social-images{
+     display: flex;
+ }
+ .footer-image img{
+    width: 406px;
+    height: 88px;
+ }
+ .social-images img{
+     height: 32px ;
+     width: 32px;
+     padding-right: 14px;
+ }
+ .footer-copyright p{
+     font-size: 18px;
+     font-weight: 400px;
+ }
+
+
+ /* ----------------------------------
+ Footer Part Finish
+ ------------------------------------*/
+
+
+
+ /* ----------------------------------
+ Media Query Start
+ ------------------------------------*/
+
+ /* For Mobile  */
+ @media only screen and (max-width:687px){
+     .container{
+         width: 100%;
+     }
+     /* Header Section */
+     .head-section{
+        width: 360px;
+    }
+
+     .head-element-section{
+         flex-direction: column;
+
+     }
+     .head-title-text{
+        margin-left: 15px ;
+        width: 360px;
+        font-size: 36px;
+        
+    }
+    .head-image img{
+        width: 326px;
+        height: 212px;
+        margin-top: 30px; 
+    }
+    .head-text p{
+        margin-left: 15px ;
+    }
+     
+     /* player Section */
+     .palyers{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 15px;
+        grid-row-gap:15px
+    }
+
+    /* Video Section */
+   
+    
+     .latest-videos{
+         
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         
+     }
+     
+     .video-section{
+         margin-bottom: 20px;
+         width: 320px;
+         
+     }
+     .video iframe{
+         
+         width: 320px;
+         height: 300px;
+     }
+
+     /* Blog Section  */
+     
+     .blog-text{
+        text-align: center;
+    }
+    .blogs{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-row-gap:10px;
+       padding-left: 20px;
+       
+    }
+    /* Footer Section */
+
+    .footer-content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }  
+      .footer-section{
+       
+        margin-top: 45px;
+    }
+     .footer-image img{
+        width: 230px;
+        height: 54px;
+       
+     } 
+
+
+ /* ----------------------------------
+ Media Query FInish
+ ------------------------------------*/
+
+}
